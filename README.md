@@ -1,4 +1,4 @@
- # Nombre del Proyecto
+ # Challenge 
 
 ## Descripción
 
@@ -30,7 +30,7 @@ Accede al Directorio del Proyecto
 
 ## Rutas de la Aplicación
 
-1. **`/`** - **Página de Inicio**: n esta página puedes buscar películas. Una vez que realizas una búsqueda y seleccionas "Buscar", se mostrarán los resultados correspondientes. Ejemplo: puedes buscar "The Shining" o "Harry Potter".
+1. **`/`** - **Página de Inicio**: Esta página puedes buscar películas. Una vez que realizas una búsqueda y seleccionas "Buscar", se mostrarán los resultados correspondientes. Ejemplo: puedes buscar "The Shining" o "Harry Potter".
    
 2. **`/register`** - **Registro**: Página para que los usuarios se registren en la aplicación.
 
