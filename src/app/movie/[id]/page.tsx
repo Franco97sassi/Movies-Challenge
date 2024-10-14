@@ -68,7 +68,7 @@ const MoviePage = async ({ params }: { params: { id: string } }) => {
         <section className="mt-8">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Similar Movies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {similarMovies.map((similarMovie) => (
+            {similarMovies.map((similarMovie: SimilarMovie) => (
               <div
                 key={similarMovie.id}
                 className="border rounded-lg shadow-lg overflow-hidden bg-gray-200 dark:bg-gray-700 transition-transform transform hover:scale-105"
