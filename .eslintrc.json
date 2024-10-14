@@ -1,36 +1,22 @@
-// {
-//   "extends": ["next/core-web-vitals", "next/typescript"]
-// }
-// {
-//   "extends": ["airbnb", "airbnb/hooks", "plugin:@typescript-eslint/recommended", "next/core-web-vitals"],
-//   "plugins": ["@typescript-eslint"],
-//   "rules": {
-//     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-//     "import/extensions": "off",
-//     "no-console": "warn"
-//   }
-// }
-
-// {
-//   "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "next/core-web-vitals"],
-//   "parserOptions": {
-//     "project": "./tsconfig.json"
-//   }
-// }
-// {
-//   "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "next/core-web-vitals"],
-//   "parserOptions": {
-//     "project": "./tsconfig.json"
-//   },
-//   "rules": {
-//     "react/react-in-jsx-scope": "off", // Next.js no necesita importar React explícitamente
-//     "jsx-a11y/anchor-is-valid": "off", // Reglas para el componente <Link> de Next.js
-//     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }] // Ignorar variables sin usar que empiecen con _
-//   }
-// }
 {
-  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "parser": "@typescript-eslint/parser", // Utiliza el analizador de TypeScript
+  "extends": [
+    "airbnb", // Configuración de Airbnb para JavaScript
+    "airbnb/hooks", // Configuración de Airbnb para React hooks
+    "prettier", // Configuración para Prettier
+    "plugin:@typescript-eslint/recommended" // Reglas recomendadas de @typescript-eslint
+  ],
+  "plugins": [
+    "@typescript-eslint", // Plugin para TypeScript
+    "react" // Plugin para React
+  ],
   "rules": {
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off", // Desactiva la regla de JSX en el alcance
+    // Puedes agregar más reglas personalizadas aquí
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Detecta automáticamente la versión de React
+    }
   }
 }
